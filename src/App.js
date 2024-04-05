@@ -2,8 +2,9 @@ import './App.css';
 import Footer from './customer/components/Footer/Footer';
 import  Navigation  from './customer/components/Navigation/Navigation';
 // import Product from './customer/components/Product/Product';
-import ProductDetails from './customer/components/ProductDetails/ProductDetails';
+// import ProductDetails from './customer/components/ProductDetails/ProductDetails';
 // import HomePage from './customer/pages/HomePage/HomePage';
+import Card from './customer/components/Card/Card';
 
 const App =() => {
     return (
@@ -12,8 +13,9 @@ const App =() => {
        <div>
          {/* <HomePage/> */}
          {/* <HomeSectionCorouseldemo /> */}
-        <ProductDetails />
+        {/* <ProductDetails /> */}
         {/* <Product/> */}
+        <Card/>
        </div>
        <Footer/>
         </div>
@@ -22,4 +24,4 @@ const App =() => {
 
   export default App;
 
-  //03:28
+  //04:24
