@@ -5,7 +5,7 @@ import {Rating ,Grid ,Button ,Box ,LinearProgress}  from '@mui/material';
 import ProductReviewCard from "./ProductReviewCard";
 import mens_kurta from "../../../Data/Men/men_kurta";
 import HomeSectionCard from '../HomeSectionCard/HomeSectionCard';
-
+import {useNavigate} from 'react-router-dom';
 
 
 const product = {
@@ -65,6 +65,11 @@ function classNames(...classes) {
 export default function ProductDetails() {
   const [selectedColor, setSelectedColor] = useState(product.colors[0]);
   const [selectedSize, setSelectedSize] = useState(product.sizes[2]);
+  const navigate =useNavigate();
+
+  const handleAddToCard =()=>{
+    navigate("/cart")
+  }
 
   return (
     <div className="bg-white lg:px-20">
@@ -160,7 +165,7 @@ export default function ProductDetails() {
               <form className="mt-10">
 
                 {/* Sizes */}
-                <div className="mt-10">
+                <div className="mt-10 mb-5">
                   <div className="flex items-center justify-between">
                     <h3 className="text-sm font-medium text-gray-900">Size</h3>
                  
@@ -235,7 +240,7 @@ export default function ProductDetails() {
                   </RadioGroup>
                 </div>
 
-                <Button variant="contained" sx={{px:"2rem" , py:"1rem" , bgcolor :"#9155fd"}}>
+                <Button onClick={handleAddToCard}  variant="contained" sx={{px:"2rem" , py:"1rem" , bgcolor :"#9155fd"}}>
                   Add to Cart
                 </Button>
               </form>

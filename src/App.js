@@ -1,29 +1,21 @@
 import './App.css';
-import Footer from './customer/components/Footer/Footer';
-import  Navigation  from './customer/components/Navigation/Navigation';
-// import Product from './customer/components/Product/Product';
-// import ProductDetails from './customer/components/ProductDetails/ProductDetails';
-// import HomePage from './customer/pages/HomePage/HomePage';
-// import Card from './customer/components/Card/Card';
-import Checkout from './customer/components/Checkout/Checkout';
+import {Routes,Route} from 'react-router-dom';
+import CustomerRouters from './Routers/CustomerRouters';
+
+
 
 const App =() => {
     return (
       <div className="">
-       <Navigation />
-       <div>
-         {/* <HomePage/> */}
-         {/* <HomeSectionCorouseldemo /> */}
-        {/* <ProductDetails /> */}
-        {/* <Product/> */}
-        {/* <Card/> */}
-        <Checkout/>
-       </div>
-       <Footer/>
+
+        <Routes>
+            <Route path='/*' element={<CustomerRouters/>}></Route>
+        </Routes>
+     
         </div>
     );
   }
 
   export default App;
 
-  //05:16
+  //05:52
