@@ -4,7 +4,8 @@ import  Navigation  from './customer/components/Navigation/Navigation';
 // import Product from './customer/components/Product/Product';
 // import ProductDetails from './customer/components/ProductDetails/ProductDetails';
 // import HomePage from './customer/pages/HomePage/HomePage';
-import Card from './customer/components/Card/Card';
+// import Card from './customer/components/Card/Card';
+import Checkout from './customer/components/Checkout/Checkout';
 
 const App =() => {
     return (
@@ -15,7 +16,8 @@ const App =() => {
          {/* <HomeSectionCorouseldemo /> */}
         {/* <ProductDetails /> */}
         {/* <Product/> */}
-        <Card/>
+        {/* <Card/> */}
+        <Checkout/>
        </div>
        <Footer/>
         </div>
@@ -24,4 +26,4 @@ const App =() => {
 
   export default App;
 
-  //04:24
+  //05:16
