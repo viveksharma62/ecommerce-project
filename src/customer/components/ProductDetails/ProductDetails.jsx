@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { StarIcon } from "@heroicons/react/20/solid";
 import { RadioGroup } from "@headlessui/react";
 import {Rating ,Grid ,Button ,Box ,LinearProgress}  from '@mui/material';
 import ProductReviewCard from "./ProductReviewCard";
@@ -63,7 +62,7 @@ function classNames(...classes) {
 }
 
 export default function ProductDetails() {
-  const [selectedColor, setSelectedColor] = useState(product.colors[0]);
+  // const [selectedColor, setSelectedColor] = useState(product.colors[0]);
   const [selectedSize, setSelectedSize] = useState(product.sizes[2]);
   const navigate =useNavigate();
 

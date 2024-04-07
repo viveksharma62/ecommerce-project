@@ -7,7 +7,8 @@ import CustomerRouters from './Routers/CustomerRouters';
 const App =() => {
     return (
       <div className="">
-
+        
+        
         <Routes>
             <Route path='/*' element={<CustomerRouters/>}></Route>
         </Routes>
@@ -17,5 +18,3 @@ const App =() => {
   }
 
   export default App;
-
-  //05:52

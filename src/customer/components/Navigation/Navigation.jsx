@@ -1,4 +1,5 @@
 import { Fragment, useState } from "react";
+import Myimg from './mylogo.jpg'
 import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
 import {
   Bars3Icon,
@@ -246,9 +247,14 @@ export default function Navigation() {
               {/* Logo */}
               <div className="ml-4 flex lg:ml-0">
                 <span className="sr-only">Your Company</span>
-                <img
+                {/* <img
                   className="h-8 w-8 mr-2"
                   src="https://upload.wikimedia.org/wikipedia/commons/f/f3/VK_Compact_Logo_%282021-present%29.svg"
+                  alt=""
+                /> */}
+                <img
+                  className="h-8 w-8 mr-2"
+                  src={Myimg}
                   alt=""
                 />
               </div>

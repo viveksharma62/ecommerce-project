@@ -106,10 +106,10 @@ const Footer = () => {
         </Grid>
           <Grid className="pt-20" item xs={12}>
             <Typography variant="body2" component="p" align="center">
-              &copy; 2023 My Company. All rights reserved
+              &copy; 2024 My Company. All rights reserved
             </Typography>
             <Typography variant="body2" component="p" align="center">
-              Made with love by me.
+              Made by vivek sharma.
             </Typography>
             <Typography variant="body2" component="p" align="center">
               Icon made by{' '}
